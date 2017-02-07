@@ -13,4 +13,3 @@ function sumar()
 	resultado = num1 + num2;
 	alert("La suma es " + resultado);
 }
-
