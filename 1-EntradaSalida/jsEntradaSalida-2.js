@@ -6,4 +6,3 @@ function Mostar()
 	nombre = prompt("Introduzca su nombre");
 	alert(nombre);
 }
-

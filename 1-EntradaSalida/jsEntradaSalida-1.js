@@ -3,4 +3,3 @@ function Mostar()
 {
 	alera(Hola)	
 }
-
