@@ -2,10 +2,11 @@ function Mostrar()
 {
 var inster = prompt("Número");
 var cant = 0;
-for(cant = 0; inster % 2 == 0; cant++)
+for(i = 1 ; i <= inster ; i++)
 	{
-		if(inster % 2 == 0)
+		if( i % 2 == 0)
 		{
+			cant++;
 			alert(cant);
 		}
 	}
