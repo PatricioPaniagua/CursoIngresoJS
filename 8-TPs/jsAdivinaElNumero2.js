@@ -9,20 +9,20 @@
 Desde  6 Intentos hasta 10:”falta técnica”
 Más de 10 intentos: “afortunado en el amor!!”.*/
 
-var numeroSecreto; 
-var contadorIntentos = 1;
-var num;
-num = document.getElementById("numero").value;
+
 function comenzar()
 {	//Genero el número RANDOM entre 1 y 100
+	var numeroSecreto; 
 	 numeroSecreto = Math.floor(Math.random() * (100 - 1) + 1);
-	
+	console.log(numeroSecreto);
 
 }
 
 function verificar()
-{	
-
+{	var numeroSecreto; 
+	var contadorIntentos = 1;
+	var num;
+	num = document.getElementById("numero").value;
 	document.getElementById("intentos").value = contadorIntentos;
 	while(document.getElementById("numero").value != numeroSecreto)
 		{
@@ -30,32 +30,33 @@ function verificar()
 			break; 
 		}
 
-	if(document.getElementById("numero").value = numeroSecreto && contadorIntentos = 1)
+	if(num == numeroSecreto)
 		{
-			alert("Usted es un psíquico");
-		}
-	else if(contadorIntentos = 2)
-		{
-			alert("Excelente percepción");
-		}
-	else if(contadorIntentos = 3)
-		{
-			alert("Esto es suerte");
-		}
-	else if(contadorIntentos = 4)
-		{
-			alert("Excelente técnica");
-		}
-	else if(contadorIntentos = 5)
-		{
-			alert("Usted está en la media");
-		}
-	else if(contadorIntentos >=6 && contadorIntentos <=10)
-		{
-			alert("Falta técnica");
-		}
-	else
-		{
-			alert("Afortunado en el amor!!");
+			case 1:
+					alert("Usted es un psíquico");
+					break;
+			case 2:
+					alert("Excelente precepcion");
+					break;
+			case 3:
+					alert("Esto es pura suerte");
+					break;
+			case 4:
+					alert("Excelente tecnica");
+					break;
+			case 5:
+					alert("Usted esta en la meda");
+					break;
+			case 6:
+			case 7:
+			case 8:
+			case 9:
+			case 10:
+					alert("Falta tecnica");
+					break;
+			default:
+					alert("Afortunado en el amor");
+					break;
+
 		}
 }
